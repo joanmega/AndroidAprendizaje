@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_modificar_evento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.joanmega1986.fiestas.ModificarEvento"
+    tools:showIn="@layout/activity_modificar_evento">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/lNumEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lNumEvento"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/tNumEvento"
+                android:clickable="false"
+                android:layout_below="@+id/lNumEvento"
+                android:layout_alignStart="@+id/lNumEvento"
+                android:enabled="false"
+                android:editable="true"
+                android:fontFamily="sans-serif"
+                android:textColor="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:text="@string/lEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tNumEvento"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lEvento" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:ems="10"
+                android:layout_marginStart="18dp"
+                android:layout_below="@+id/lEvento"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tEvento" />
+
+            <TextView
+                android:text="@string/lDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tEvento"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lDescripcion" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:ems="10"
+                android:id="@+id/tDescripcion"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@+id/lDescripcion"
+                android:layout_alignStart="@+id/lDescripcion" />
+
+            <TextView
+                android:text="@string/lLugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tDescripcion"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lLugar" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:ems="10"
+                android:layout_marginStart="18dp"
+                android:layout_below="@+id/lLugar"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tLugar" />
+
+            <TextView
+                android:text="@string/lDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tLugar"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lDia" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lDia"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:id="@+id/tDia"/>
+
+            <TextView
+                android:text="@string/lHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tDia"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lHora" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lHora"
+                android:layout_alignParentStart="true"
+                android:timePickerMode="spinner"
+                android:id="@+id/tHora" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tHora"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bModificar"
+                    android:id="@+id/bModificar"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bEliminar"
+                    android:id="@+id/bEliminar"
+                    android:layout_toEndOf="@+id/bModificar" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

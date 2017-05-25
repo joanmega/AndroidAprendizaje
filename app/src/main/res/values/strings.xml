@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Fiestas Montillana</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="lNumEvento">Num. Evento</string>
+    <string name="lEvento">Evento</string>
+    <string name="lDescripcion">Descripción</string>
+    <string name="lLugar">Lugar</string>
+    <string name="lDia">Fecha</string>
+    <string name="lHora">Hora</string>
+    <string name="bModificar">Modificar</string>
+    <string name="bEliminar">Eliminar</string>
+    <string name="title_activity_administrar_eventos">Administrar Eventos</string>
+    <string name="bAnadir">Añadir</string>
+    <string name="bReset">Reset</string>
+    <string name="title_activity_anadir_evento">AnadirEvento</string>
+
+</resources>
